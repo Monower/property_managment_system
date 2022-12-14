@@ -57,6 +57,9 @@ class PropertyController extends Controller
         $Property->price = $request->price;
         $Property->save(); 
 
+
+        return redirect(route('property.index'));
+
     }
 
     /**
