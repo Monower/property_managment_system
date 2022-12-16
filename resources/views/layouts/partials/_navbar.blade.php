@@ -6,13 +6,13 @@
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="{{ route('dashboard') }}" class="nav-link">Home</a>
+        <a href="{{ route('dashboard') }}" class="text-sm font-semibold text-indigo-600 bg-white p-2 rounded-sm hover:shadow-lg mr-2">Home</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="{{ route('property.index') }}" class="nav-link">Properties List</a>
+        <a href="{{ route('property.index') }}" class="text-sm font-semibold text-indigo-600 bg-white p-2 rounded-sm hover:shadow-lg mr-2">Properties List</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="{{ route('property.create') }}" class="nav-link">Sell Property</a>
+        <a href="{{ route('property.create') }}" class="text-sm font-semibold text-indigo-600 bg-white p-2 rounded-sm hover:shadow-lg mr-2">Sell Property</a>
       </li>
     </ul>
 

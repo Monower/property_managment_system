@@ -25,7 +25,7 @@
         
 
 
-        <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
+        <div class="relative flex items-top justify-center min-h-screen bg-gradient-to-br from-indigo-200 to-indigo-400 sm:items-center py-4 sm:pt-0”>
             @if (Route::has('login'))
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
                     @auth
@@ -40,14 +40,23 @@
                 </div>
             @endif
 
-            <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
+{{--             <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
                 <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
                 <p style="color:rgb(12, 0, 187)"><strong><font size="+5">Property Management</font></strong></p>
                 </div>
                 <div class="flex justify-center pt-8 sm:pt-0">
                 <p style="color:rgba(255, 55, 0, 0.854)"><strong><font size="+2">Value Is What You Get</font></strong></p>
                 </div>
-            </div>
+            </div> --}}
+
+            <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
+                <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
+                <p class="text-indigo-800"><strong><font size="+5">Property Management</font></strong></p>
+                </div>
+                <div class="flex justify-center pt-8 sm:pt-0">
+                <p class="text-indigo-800 italic bg-indigo-200 px-4 rounded mt-5"><strong><font size="+2">....Value Is What You Get....</font></strong></p>
+                </div>
+</div>
         </div>
     </body>
 
