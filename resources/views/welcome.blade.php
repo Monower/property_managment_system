@@ -25,16 +25,16 @@
         
 
 
-        <div class="relative flex items-top justify-center min-h-screen bg-gradient-to-br from-indigo-200 to-indigo-400 sm:items-center py-4 sm:pt-0”>
+        <div class="relative flex items-top justify-center min-h-screen bg-gradient-to-br from-indigo-200 to-indigo-400 sm:items-center py-4 sm:pt-0">
             @if (Route::has('login'))
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
                     @auth
-                        <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Dashboard</a>
+                        <a style="background-color: #1a202c; color: white; padding: 4px;border-radius: 5px" href="{{ url('/dashboard') }}" class="text-sm font-semibold text-indigo-600 bg-black p-2 rounded-sm hover:shadow-lg mr-2">Dashboard</a>
                     @else
-                        <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
+                        <a style="background-color: #1a202c; color: white; padding: 4px;border-radius: 5px" href="{{ route('login') }}" class="text-sm font-semibold text-indigo-600 bg-black p-2 rounded-sm hover:shadow-lg mr-2">Log in</a>
 
                         @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
+                            <a style="background-color: #1a202c; color: white; padding: 4px;border-radius: 5px" href="{{ route('register') }}" class="ml-4 text-sm font-semibold text-indigo-600 bg-black p-2 rounded-sm hover:shadow-lg mr-2">Register</a>
                         @endif
                     @endauth
                 </div>
@@ -49,7 +49,7 @@
                 </div>
             </div> --}}
 
-            <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
+            <div  class="max-w-6xl mx-auto sm:px-6 lg:px-8">
                 <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
                 <p class="text-indigo-800"><strong><font size="+5">Property Management</font></strong></p>
                 </div>
